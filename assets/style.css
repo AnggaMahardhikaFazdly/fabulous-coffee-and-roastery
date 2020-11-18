@@ -4,16 +4,12 @@
 }
 
 body {
-    font-family: 'Lato';
+    font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
     background-color: #F7F4F2;
+    color: #4F4F4F;
     overflow-x: hidden;
 }
-
-/* .header {
-    display: grid;
-} */
-
 
 nav {
     display: flex;
@@ -21,8 +17,13 @@ nav {
     justify-content: space-around;
     padding: 20px 0;
     color: rgb(0, 0, 0);
-    height: 60px;
+    height: 30px;
     align-items: center;
+    position: sticky;
+    z-index: 999;
+    width: 100%;
+    top: 0px;
+    font-weight: 600;
 }
 
 nav ul {
@@ -31,10 +32,6 @@ nav ul {
     width: 40%;
     justify-content: space-between;
 }
-
-/* .nav-link:hover {
-    border-bottom: 3px solid rgb(0, 0, 0);
-} */
 
 .nav-link:hover::after {
     content: '';
@@ -52,23 +49,12 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* .nav-logo {
-    float: left;
-    margin-left: -180px;
-}
-
-.nav-item {
-    float: right;
-    margin-right: -150px;
-} */
-
 .menu-toggle {
     display: none;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
     position: relative;
-
 }
 
 .menu-toggle input {
@@ -112,36 +98,28 @@ nav ul li a {
     transform: rotate(-45deg) translate(-1px, 0);
 }
 
-/* * {box-sizing: border-box;}
-.mySlides {display: none;}
-img {vertical-align: middle;} */
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
+.slideshow {
+  max-width: 80%;
   height: 480px;
   position: relative;
   margin: auto;
-  font-family: 'Sansita Swashed';
+  margin-top: 10px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-.slideshow-container img {
+.slideshow img {
     filter: brightness(50%);
     width: 100%;
     height: 480px;
 }
 
-
 /* Caption text */
 .text {
   color: rgb(255, 255, 255);
   font-size: 40px;
-  /* padding: 8px 12px; */
   position: absolute;
   bottom: 200px;
   top: 200px;
-  /* right: 100px;
-  left: 100px; */
   width: 100%;
   text-align: center;
   font-style: italic;
@@ -189,11 +167,6 @@ img {vertical-align: middle;} */
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-} */
-
 hr {
     width: 50%;
     display: block;
@@ -201,82 +174,97 @@ hr {
     border-style: groove;
 } 
 
-#content-1 {
+.about-us {
     text-align: center;
     margin-left: 100px;
     margin-right: 100px;
 }
 
-#article-1 h2 {
+.about-us h2 {
     text-transform: uppercase;
 }
 
-
-/* .flex-info {
-    display: block;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.flex-info img {
-    width: 100px;
-    height: 100px;
-} */
-
-.flex-info {
+.info-about-us {
     display: flex;
     flex-wrap: nowrap;
-    /* background-color: DodgerBlue; */
     margin-left: 55px;
     margin-right: 110px;
 }
   
-.flex-info > div {
-    /* background-color: #f1f1f1; */
+.info-about-us > div {
     width: 100%;
     margin: 10px;
     font-size: 20px;
 }
 
-.flex-info img {
+.info-about-us img {
     width: 100px;
     display: block;
     margin-top: 60px;
     margin-left: 50px;
 }
 
-.info-head {
+.info-head-about-us {
     margin-bottom: 10px;
 }
 
-.card {
+.product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.product-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    max-width: 200px;
     margin: auto;
     text-align: center;
-    font-family: arial;
-  }
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px) scale(1.020);
+}
+
+.product-card img {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.product-card p {
+    font-size: 15px;
+    font-weight: bold;
+}
   
-  .price {
-    color: grey;
-    font-size: 22px;
-  }
+.price {
+    color: rgb(19,183,157);
+    line-height: 55px;
+}
   
-  .card button {
+.product-card button {
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: rgb(104,185,98);
     text-align: center;
     cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
+    font-size: 15px;
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    margin-bottom: 15px;
+}
   
-  .card button:hover {
+.product-card button:hover {
     opacity: 0.7;
-  }
+}
 
 
 
