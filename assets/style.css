@@ -16,7 +16,6 @@ nav {
     background-color: #F7F4F2;
     justify-content: space-around;
     padding: 20px 0;
-    color: rgb(0, 0, 0);
     height: 30px;
     align-items: center;
     position: sticky;
@@ -31,6 +30,7 @@ nav ul {
     list-style: none;
     width: 40%;
     justify-content: space-between;
+    color: #4F4F4F;
 }
 
 .nav-link:hover::after {
@@ -208,6 +208,31 @@ hr {
     margin-bottom: 10px;
 }
 
+.product-catalog {
+    text-align: center;
+}
+
+.product-catalog h2 {
+    text-transform: uppercase;
+}
+
+.product-catalog button {
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4F4F4F;
+    border: none;
+    background: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.product-catalog button:focus {
+    outline:0;
+}
+
 .product {
     display: flex;
     justify-content: space-between;
@@ -217,14 +242,15 @@ hr {
 }
 
 .product-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     border-radius: 15px;
     max-width: 200px;
     margin: auto;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
+    background-color: #eff4f7;
 }
 
 .product-card:hover {
@@ -233,7 +259,7 @@ hr {
 
 .product-card img {
     width: 200px;
-    height: 300px;
+    height: 200px;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -244,9 +270,23 @@ hr {
   
 .price {
     color: rgb(19,183,157);
-    line-height: 55px;
+    font-size: 18px !important;
+    margin-top: 15px;
 }
-  
+
+.discount {
+    font-size: 15px !important;
+    display: inline;
+    background-color: rgb(255, 209, 220);
+    color: rgb(255, 72, 133);
+}
+
+.discount-price {
+    color: #4F4F4F;
+    font-size: 15px !important;
+    display: inline;
+}
+
 .product-card button {
     border: none;
     outline: 0;
@@ -259,11 +299,25 @@ hr {
     border-radius: 10px;
     width: 170px;
     height: 40px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
   
 .product-card button:hover {
     opacity: 0.7;
+}
+
+.wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10 !important;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.wishlist:hover {
+    opacity: 5;
 }
 
 
