@@ -6,14 +6,14 @@
 body {
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
-    background-color: #F7F4F2;
-    color: #4F4F4F;
+    background-color: #fff5d7;
+    color: #2F1728;
     overflow-x: hidden;
 }
 
 nav {
     display: flex;
-    background-color: #F7F4F2;
+    background-color: #2E303D;
     justify-content: space-around;
     padding: 20px 0;
     height: 30px;
@@ -30,23 +30,23 @@ nav ul {
     list-style: none;
     width: 40%;
     justify-content: space-between;
-    color: #4F4F4F;
 }
 
 .nav-link:hover::after {
     content: '';
     display: block;
-    border-bottom: 3px solid #80AAAA;
+    border-bottom: 3px solid #F2F3F0;
     width: 70%;
     margin: auto;
     padding-bottom: 5px;
     margin-bottom: -8px;
-    width: 30%;
+    width: 70%;
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: #F2F3F0;
     text-decoration: none;
+    font-size: 16px !important;
 }
 
 .menu-toggle {
@@ -223,10 +223,21 @@ hr {
     font-size: 20px;
     font-weight: bold;
     color: #4F4F4F;
+    border-bottom: 3px solid #4F4F4F;
     border: none;
     background: none;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.product-catalog button:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #4F4F4F;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: -13px;
+    width: 70%;
 }
 
 .product-catalog button:focus {
@@ -333,6 +344,25 @@ hr {
     opacity: 5;
 }
 
+.manualbrewers-wishlist {
+    color: #FFFFFF;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10 !important;
+    cursor: pointer;
+}
+
+.manualbrewers-wishlist:hover {
+    opacity: 5;
+}
+
+.in-wishlist {
+    opacity: 1;
+    animation-name: wishlist-ani;
+    animation-duration: 1000ms;
+    color: red;
+}
 
 
 /* Tablet */

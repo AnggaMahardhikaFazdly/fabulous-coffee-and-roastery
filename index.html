@@ -16,7 +16,7 @@
     <header>
         <nav>
             <div id="home" class="logo">
-                <img src="" alt="logo brand">
+                <img src="./images/brand-logo/brand-logo.jpg" alt="logo brand">
             </div>
 
             <ul class="nav-list">
@@ -37,37 +37,37 @@
         </nav>
 
         <div class="slideshow">
-            <div class="mySlides fade">
+            <div class="sliderCarousel fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="./images/slide-show-carousel/coffee-slide1.jpg">
                 <div class="text">"A bad day with coffee is better than a good day without it"</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="sliderCarousel fade">
                 <div class="numbertext">2 / 3</div>
                 <img src="./images/slide-show-carousel/coffee-slide2.png">
                 <div class="text">"Coffee smells like freshly ground heaven"</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="sliderCarousel fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="./images/slide-show-carousel/coffee-slide3.png">
                 <div class="text">"I orchestrate my mornings to the tune of coffee"</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="sliderCarousel fade">
                 <div class="numbertext">4 / 4</div>
                 <img src="./images/slide-show-carousel/coffee-slide4.jpg">
                 <div class="text">"As long as there was coffee in the world, how bad could things be?"</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="sliderCarousel fade">
                 <div class="numbertext">5 / 5</div>
                 <img src="./images/slide-show-carousel/coffee-slide5.jpeg">
                 <div class="text">"What goes best with a cup of coffee? Another cup"</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="sliderCarousel fade">
                 <div class="numbertext">6 / 6</div>
                 <img src="./images/slide-show-carousel/coffee-slide6.jpg">
                 <div class="text">"Coffee should be black as hell, strong as death and sweet as love"</div>
@@ -141,585 +141,586 @@
         <section>
             <div class="product-catalog" id="product">
                 <h2>Our Products</h2>
-                <button class="button-catalog-list" onclick="currentCatalogList(1)">Single Origin</button>
-                <button class="button-catalog-list" onclick="currentCatalogList(2)">Coffee Machines</button>
-                <button class="button-catalog-list" onclick="currentCatalogList(3)">Manual Brewers</button>
+                <button class="buttonCatalog" onclick="currentDiv(1)">Single Origin</button>
+                <button class="buttonCatalog" onclick="currentDiv(2)">Coffee Machines</button>
+                <button class="buttonCatalog" onclick="currentDiv(3)">Manual Brewers</button>
             </div>
         </section>
 
-        <div class="product">
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-robusta (flores manggarai).jpg" alt="flores manggarai robusta coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Flores Manggarai 200g</p>
-                <p>Robusta Coffee</p>
-                <p class="price">IDR 72.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 80.000</p>
-                <button>Add to Cart</button>
+        <section>
+            <div class="product">
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-robusta (flores manggarai).jpg" alt="flores manggarai robusta coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Flores Manggarai 200g</p>
+                    <p>Robusta Coffee</p>
+                    <p class="price">IDR 72.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 80.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-robusta (kintamani bali).jpg" alt="kintamani bali robusta coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Kintamani Bali 200g</p>
+                    <p>Robusta Coffee</p>
+                    <p class="price">IDR 72.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 80.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-robusta (dampit malang).jpg" alt="dampit malang robusta coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Dampit Malang 200g</p>
+                    <p>Robusta Coffee</p>
+                    <p class="price">IDR 63.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 70.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-robusta (java ijen).jpg" alt="java ijen robusta coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Java Ijen 200g</p>
+                    <p>Robusta Coffee</p>
+                    <p class="price">IDR 72.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 80.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-robusta (sidikalang).jpg" alt="sidikalang robusta coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Sidikalang 200g</p>
+                    <p>Robusta Coffee</p>
+                    <p class="price">IDR 49.500</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 55.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (palintan honey).jpg" alt="palintan honey arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Palintan Honey 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 72.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 80.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (toraja sapan).jpg" alt="toraja sapan arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Toraja Sapan 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 81.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 90.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (java welinggalih).jpg" alt="java welinggalih arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Java Welinggalih 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 72.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 80.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (kerinci kayu aro).jpg" alt="kerinci kayu aro arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Kerinci Kayu Aro 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 72.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 80.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (aceh gayo atu lintang).jpg" alt="aceh gayo atu lintang arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Aceh Gayo Atu Lintang 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 63.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 70.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (flores bajawa).jpg" alt="flores bajawa arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Flores Bajawa 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 63.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 70.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (garut honey).jpg" alt="garut honey arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Garut Honey 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 59.500</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 65.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (java ciwidey).jpg" alt="java ciwidey arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Java Ciwidey 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 59.500</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 65.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (java sukawangi).jpg" alt="java sukawangi arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Java Sukawangi 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 63.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 70.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (lintong onan ganjang).jpg" alt="lintong onan ganjang arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Lintong Onan Ganjang 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 72.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 80.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (malabar honey).jpg" alt="malabar honey arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Malabar Honey 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 63.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 70.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (mandheling honey).jpg" alt="mandheling honey arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Mandheling Honey 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 63.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 70.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (wamena papua).jpg" alt="wamena papua arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Wamena Papua 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 81.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 90.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (solok selatan).jpg" alt="solok selatan arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Solok Selatan 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 63.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 70.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/single-origin-product-card/single-origin-arabica (tirtoyudo).jpg" alt="tirtoyudo arabica coffee">
+                    <i class="fa fa-heart coffee-wishlist"></i>
+                    <p>Tirtoyudo 200g</p>
+                    <p>Arabica Coffee</p>
+                    <p class="price">IDR 49.500</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 55.000</p>
+                    <button>Add to Cart</button>
+                </div>
             </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-robusta (kintamani bali).jpg" alt="kintamani bali robusta coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Kintamani Bali 200g</p>
-                <p>Robusta Coffee</p>
-                <p class="price">IDR 72.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 80.000</p>
-                <button>Add to Cart</button>
+        </section>
+        
+        <section>
+            <div class="product">
+                <div class="product-card">
+                    <img src="./images/coffee-machines/breville-coffee machine infuser-bes840.jpg" alt="breville coffee machine infuser - bes840">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Breville Coffee Machine Infuser - BES840</p>
+                    <p class="price">IDR 11.856.000</p>
+                    <p class="discount">4%</p>
+                    <p class="discount-price">IDR 12.350.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/breville-the-oracle-espresso-bes980.jpg" alt="breville the oracle espresso bes980">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Breville - The Oracle Espresso BES980</p>
+                    <p class="price">IDR 40.000.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 44.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/brewista-x-series-hand-grinder-bx001.jpg" alt="brewista x series hand grinder - bx001">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Brewista - X Series Hand Grinder - BX001</p>
+                    <p class="price">IDR 3.760.000 </p>
+                    <p class="discount">6%</p>
+                    <p class="discount-price">IDR 4.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/chemex-ottomatic-coffee-maker.jpg" alt="chemex ottomatic coffee maker">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Chemex - Ottomatic Coffee Maker</p>
+                    <p class="price">IDR 7.039.120 </p>
+                    <p class="discount">12%</p>
+                    <p class="discount-price">IDR 7.999.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/delonghi-combi-bco421.s-home-espresso.jpg" alt="delonghi combi bc0421.s home espresso">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>DeLonghi - Combi BCO421.S Home Espresso</p>
+                    <p class="price">IDR 4.500.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 5.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/delonghi-dedica-style-ec-685.bk.jpg" alt="delonghi dedica style ec 685.bk">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>DeLonghi - Dedica Style EC 685.BK</p>
+                    <p class="price">IDR 3.915.000</p>
+                    <p class="discount">13%</p>
+                    <p class="discount-price">IDR 4.500.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/delonghi-distinta-pump-espresso-eci-341.bk.jpg" alt="delonghi distinta pump espresso eci 341.bk">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>DeLonghi - Distinta Pump Espresso ECI 341.BK</p>
+                    <p class="price">IDR 3.600.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 4.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/delonghi-drip-coffee-maker-icm-15210.jpg" alt="delonghi drip coffee maker icm 15210">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>DeLonghi - Drip Coffee Maker ICM 15210</p>
+                    <p class="price">IDR 980.000</p>
+                    <p class="discount">2%</p>
+                    <p class="discount-price">IDR 1.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/delonghi-eletta-cappuccino-top-ecam-45.760.b.jpg" alt="delonghi eletta capuccino top ecam 45.760.b">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>DeLonghi - Eletta Cappuccino Top ECAM 45.760.B</p>
+                    <p class="price">IDR 23.194.200</p>
+                    <p class="discount">14%</p>
+                    <p class="discount-price">IDR 26.970.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/delonghi-espresso-machine-ec-820.b.jpg" alt="delonghi espresso machine 3c 820.b">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>DeLonghi - Espresso Machine EC 820.B</p>
+                    <p class="price">IDR 5.115.000</p>
+                    <p class="discount">7%</p>
+                    <p class="discount-price">IDR 5.500.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/delonghi-espresso-machine-ecp-31.21.jpg" alt="delonghi espresso machine ecp 31.21">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>DeLonghi - Espresso Machine ECP 31.21</p>
+                    <p class="price">IDR 2.700.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 3.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/delonghi-la-specialista-ec9335.m.jpg" alt="delonghi la specialista ec9335.m">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>DeLonghi - La Specialista EC9335.M</p>
+                    <p class="price">IDR 16.150.000</p>
+                    <p class="discount">5%</p>
+                    <p class="discount-price">IDR 17.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/dolce-gusto-mini-me-black-(low-watt).jpg" alt="dolce gusto mini me black (low watt)">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Dolce Gusto Mini Me Black (Low Watt)</p>
+                    <p class="price">IDR 850.000</p>
+                    <p class="discount">15%</p>
+                    <p class="discount-price">IDR 1.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/gaggia-classic-2019-home-espresso.jpg" alt="gaggia classic 2019 home espresso">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Gaggia Classic 2019 Home Espresso</p>
+                    <p class="price">IDR 13.311.000</p>
+                    <p class="discount">13%</p>
+                    <p class="discount-price">IDR 15.300.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/jura-ena-8-massive-grinder-aluminium-automatic.jpg" alt="jura ena 8 massive grinder aluminium - automatic">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Jura Ena 8 Massive Grinder Aluminium - Automatic</p>
+                    <p class="price">IDR 38.280.000</p>
+                    <p class="discount">13%</p>
+                    <p class="discount-price">IDR 44.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/la-pavoni-espresso-coffee-lever-machine.jpg" alt="la pavoni espresso coffee lever machine">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>La Pavoni - Espresso Coffee Lever Machine</p>
+                    <p class="price">IDR 12.000.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 13.200.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/rancilio-silvia-(Black)-stainless-steel.jpg" alt="rancilio silvia black stainless steel">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Rancilio - Silvia (Black) Stainless Steel</p>
+                    <p class="price">IDR 15.300.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 17.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/saeco-aulika-focus-automatic-stainless-steel.jpg" alt="saeco aulika focus automatic - stainless steel">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Saeco Aulika Focus Automatic - Stainless Steel</p>
+                    <p class="price">IDR 28.000.000</p>
+                    <p class="discount">20%</p>
+                    <p class="discount-price">IDR 35.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/welhome-espresso-machine-kd-130-black.jpg" alt="welhome espresso machine kd-130 black">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Welhome - Espresso Machine KD-130 Black</p>
+                    <p class="price">IDR 5.850.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 6.500.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/coffee-machines/welhome-espresso-machine-pro-variable-(KD-310VP).jpg" alt="welhome espresso machine pro variable pressure (kd-310vp)">
+                    <i class="fa fa-heart-o machine-wishlist"></i>
+                    <p>Welhome - Espresso Machine Pro Variable (KD-310VP)</p>
+                    <p class="price">IDR 19.950.000</p>
+                    <p class="discount">5%</p>
+                    <p class="discount-price">IDR 21.000.000</p>
+                    <button>Add to Cart</button>
+                </div>
             </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-robusta (dampit malang).jpg" alt="dampit malang robusta coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Dampit Malang 200g</p>
-                <p>Robusta Coffee</p>
-                <p class="price">IDR 63.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 70.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-robusta (java ijen).jpg" alt="java ijen robusta coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Java Ijen 200g</p>
-                <p>Robusta Coffee</p>
-                <p class="price">IDR 72.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 80.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-robusta (sidikalang).jpg" alt="sidikalang robusta coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Sidikalang 200g</p>
-                <p>Robusta Coffee</p>
-                <p class="price">IDR 49.500</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 55.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (palintan honey).jpg" alt="palintan honey arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Palintan Honey 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 72.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 80.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (toraja sapan).jpg" alt="toraja sapan arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Toraja Sapan 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 81.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 90.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (java welinggalih).jpg" alt="java welinggalih arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Java Welinggalih 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 72.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 80.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (kerinci kayu aro).jpg" alt="kerinci kayu aro arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Kerinci Kayu Aro 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 72.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 80.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (aceh gayo atu lintang).jpg" alt="aceh gayo atu lintang arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Aceh Gayo Atu Lintang 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 63.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 70.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (flores bajawa).jpg" alt="flores bajawa arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Flores Bajawa 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 63.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 70.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (garut honey).jpg" alt="garut honey arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Garut Honey 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 59.500</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 65.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (java ciwidey).jpg" alt="java ciwidey arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Java Ciwidey 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 59.500</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 65.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (java sukawangi).jpg" alt="java sukawangi arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Java Sukawangi 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 63.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 70.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (lintong onan ganjang).jpg" alt="lintong onan ganjang arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Lintong Onan Ganjang 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 72.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 80.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (malabar honey).jpg" alt="malabar honey arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Malabar Honey 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 63.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 70.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (mandheling honey).jpg" alt="mandheling honey arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Mandheling Honey 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 63.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 70.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (wamena papua).jpg" alt="wamena papua arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Wamena Papua 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 81.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 90.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (solok selatan).jpg" alt="solok selatan arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Solok Selatan 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 63.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 70.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/single-origin-product-card/single-origin-arabica (tirtoyudo).jpg" alt="tirtoyudo arabica coffee">
-                <i class="fa fa-heart coffee-wishlist"></i>
-                <p>Tirtoyudo 200g</p>
-                <p>Arabica Coffee</p>
-                <p class="price">IDR 49.500</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 55.000</p>
-                <button>Add to Cart</button>
-            </div>
-        </div>
+        </section>
 
-
-        <div class="product">
-            <div class="product-card">
-                <img src="./images/coffee-machines/breville-coffee machine infuser-bes840.jpg" alt="breville coffee machine infuser - bes840">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Breville Coffee Machine Infuser - BES840</p>
-                <p class="price">IDR 11.856.000</p>
-                <p class="discount">4%</p>
-                <p class="discount-price">IDR 12.350.000</p>
-                <button>Add to Cart</button>
+        <section>>
+            <div class="product">
+                <div class="product-card">
+                    <img src="./images/manual-brewers/a-IDIO-diamond-coffee-dripper-(Black).jpg" alt="a-idio diamond coffee dripper (black)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>A-IDIO - Diamond Coffee Dripper (Black)</p>
+                    <p class="price">IDR 672.000</p>
+                    <p class="discount">4%</p>
+                    <p class="discount-price">IDR 700.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/a-IDIO-drip-coffee-kettle-240ml-(Rose Gold).jpg" alt="a-idio drip coffee kettle 240ml (rose gold)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>A-IDIO - Drip Coffee Kettle 240ml (Rose Gold)</p>
+                    <p class="price">IDR 618.800</p>
+                    <p class="discount">9%</p>
+                    <p class="discount-price">IDR 680.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/a-IDIO -stylish-kettle-600ml-(Titanium Black).jpg" alt="a-idio stylish kettle 600ml (titanium black)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>A-IDIO - Stylish Kettle 600ml (Titanium Black)</p>
+                    <p class="price">IDR 988.000</p>
+                    <p class="discount">20%</p>
+                    <p class="discount-price">IDR 1.235.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/able-kone-coffee-filter-silver-for-chemex.jpg" alt="able kone coffee filter silver for chemex">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Able Kone Coffee Filter - Silver For Chemex</p>
+                    <p class="price">IDR 1.200.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 1.320.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/acaia-orion-bean-doser-(Aluminium Material).jpg" alt="acaia orion bean doser (aluminium material)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Acaia - Orion Bean Doser (Aluminium Material)</p>
+                    <p class="price">IDR 18.000.000</p>
+                    <p class="discount">5%</p>
+                    <p class="discount-price">IDR 18.900.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/aerolatte-french-press-3-cups-(Glass Material).jpg" alt="aerolatte french press 3 cups (glass material)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Aerolatte French Press 3 Cups (Glass Material)</p>
+                    <p class="price">IDR 285.000</p>
+                    <p class="discount">5%</p>
+                    <p class="discount-price">IDR 300.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/aeropress-go-travel-coffee-press.jpg" alt="aeropress go travel coffee press">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Aeropress - Go Travel Coffee Press</p>
+                    <p class="price">IDR 659.750</p>
+                    <p class="discount">9%</p>
+                    <p class="discount-price">IDR 725.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/bairro-alto-air-mini-(Stainless Steel).jpg" alt="bairro alto air mini (stainless steel)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Bairro Alto Air Mini (Stainless Steel)</p>
+                    <p class="price">IDR 441.000</p>
+                    <p class="discount">2%</p>
+                    <p class="discount-price">IDR 450.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/balancing-syphon-gold-(Glass Material).jpg" alt="balancing syphon gold (glass material)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Balancing Syphon Gold (Glass Material)</p>
+                    <p class="price">IDR 2.350.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 2.585.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/barista&Co-corral-coffee-press-8-cups-(Copper).jpg" alt="barista&co - coral coffee press 8 cups (copper)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Barista & Co - Corral Coffee Press 8 Cups (Copper)</p>
+                    <p class="price">IDR 980.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 1.078.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/barista&Co-oneBrew-coffee-and-tea-infuser-(Black).jpg" alt="barista&co - onebrew coffee and tea infuser (black)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Barista & Co - OneBrew Coffee and Tea Infuser (Black)</p>
+                    <p class="price">IDR 478.400</p>
+                    <p class="discount">8%</p>
+                    <p class="discount-price">IDR 520.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/beanplus-my-drip-set-CF02-(Glass Material).jpg" alt="beanplus my drip set cf02 (glass material)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Beanplus - My Drip Set CF02 (Glass Material)</p>
+                    <p class="price">IDR 760.000</p>
+                    <p class="discount">5%</p>
+                    <p class="discount-price">IDR 800.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/bialetti-coffee-press-smart-1L-(Black).jpg" alt="bialetti coffee press smart 1l (black)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Bialetti - Coffee Press Smart 1L (Black)</p>
+                    <p class="price">IDR 404.550</p>
+                    <p class="discount">7%</p>
+                    <p class="discount-price">IDR 435.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/bialetti-moka-express-silver-6-cups.jpg" alt="bialetti moka express silver 6 cups">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Bialetti - Moka Express Silver 6 Cups</p>
+                    <p class="price">IDR 760.000</p>
+                    <p class="discount">5%</p>
+                    <p class="discount-price">IDR 800.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/bialetti-moka-express-silver-6-cups.jpg" alt="bialetti french press omino 1l (stainless steel)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Bialetti French Press Omino 1L (Stainless Steel)</p>
+                    <p class="price">IDR 528.000</p>
+                    <p class="discount">4%</p>
+                    <p class="discount-price">IDR 550.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/bodum-caffetiera-coffee-maker-1L-black.jpg" alt="bodum caffetiera coffeemaker 1l black">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Bodum - Caffetiera Coffee Maker 1L Black</p>
+                    <p class="price">IDR 805.100</p>
+                    <p class="discount">3%</p>
+                    <p class="discount-price">IDR 830.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/delter-coffee-press-brewing.jpg" alt="delter-coffee-press-manual-brewing">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Delter - Coffee Press Manual Brewing</p>
+                    <p class="price">IDR 722.500</p>
+                    <p class="discount">15%</p>
+                    <p class="discount-price">IDR 850.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/hario-teco-dripper-set-TCD-100B.jpg" alt="hario teco dripper set tcd-100b">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Hario - Teco Dripper Set TCD-100B</p>
+                    <p class="price">IDR 320.000</p>
+                    <p class="discount">10%</p>
+                    <p class="discount-price">IDR 352.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/kinto-brewer-black-2-cups-(27521).jpg" alt="kinto brewer black 2 cups (27521)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Kinto - Brewer Black 2 Cups (27521)</p>
+                    <p class="price">IDR 383.460</p>
+                    <p class="discount">17%</p>
+                    <p class="discount-price">IDR 462.000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/manual-brewers/kinto-column-coffee-dripper-brown (22850).jpg" alt="kinto column coffee driper brown (22850)">
+                    <i class="fa fa-heart manualbrewers-wishlist"></i>
+                    <p>Kinto Column Coffee Dripper Brown (22850)</p>
+                    <p class="price">IDR 317.550</p>
+                    <p class="discount">13%</p>
+                    <p class="discount-price">IDR 365.000</p>
+                    <button>Add to Cart</button>
+                </div>
             </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/breville-the-oracle-espresso-bes980.jpg" alt="breville the oracle espresso bes980">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Breville - The Oracle Espresso BES980</p>
-                <p class="price">IDR 40.000.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 44.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/brewista-x-series-hand-grinder-bx001.jpg" alt="brewista x series hand grinder - bx001">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Brewista - X Series Hand Grinder - BX001</p>
-                <p class="price">IDR 3.760.000 </p>
-                <p class="discount">6%</p>
-                <p class="discount-price">IDR 4.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/chemex-ottomatic-coffee-maker.jpg" alt="chemex ottomatic coffee maker">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Chemex - Ottomatic Coffee Maker</p>
-                <p class="price">IDR 7.039.120 </p>
-                <p class="discount">12%</p>
-                <p class="discount-price">IDR 7.999.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/delonghi-combi-bco421.s-home-espresso.jpg" alt="delonghi combi bc0421.s home espresso">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>DeLonghi - Combi BCO421.S Home Espresso</p>
-                <p class="price">IDR 4.500.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 5.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/delonghi-dedica-style-ec-685.bk.jpg" alt="delonghi dedica style ec 685.bk">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>DeLonghi - Dedica Style EC 685.BK</p>
-                <p class="price">IDR 3.915.000</p>
-                <p class="discount">13%</p>
-                <p class="discount-price">IDR 4.500.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/delonghi-distinta-pump-espresso-eci-341.bk.jpg" alt="delonghi distinta pump espresso eci 341.bk">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>DeLonghi - Distinta Pump Espresso ECI 341.BK</p>
-                <p class="price">IDR 3.600.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 4.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/delonghi-drip-coffee-maker-icm-15210.jpg" alt="delonghi drip coffee maker icm 15210">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>DeLonghi - Drip Coffee Maker ICM 15210</p>
-                <p class="price">IDR 980.000</p>
-                <p class="discount">2%</p>
-                <p class="discount-price">IDR 1.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/delonghi-eletta-cappuccino-top-ecam-45.760.b.jpg" alt="delonghi eletta capuccino top ecam 45.760.b">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>DeLonghi - Eletta Cappuccino Top ECAM 45.760.B</p>
-                <p class="price">IDR 23.194.200</p>
-                <p class="discount">14%</p>
-                <p class="discount-price">IDR 26.970.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/delonghi-espresso-machine-ec-820.b.jpg" alt="delonghi espresso machine 3c 820.b">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>DeLonghi - Espresso Machine EC 820.B</p>
-                <p class="price">IDR 5.115.000</p>
-                <p class="discount">7%</p>
-                <p class="discount-price">IDR 5.500.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/delonghi-espresso-machine-ecp-31.21.jpg" alt="delonghi espresso machine ecp 31.21">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>DeLonghi - Espresso Machine ECP 31.21</p>
-                <p class="price">IDR 2.700.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 3.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/delonghi-la-specialista-ec9335.m.jpg" alt="delonghi la specialista ec9335.m">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>DeLonghi - La Specialista EC9335.M</p>
-                <p class="price">IDR 16.150.000</p>
-                <p class="discount">5%</p>
-                <p class="discount-price">IDR 17.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/dolce-gusto-mini-me-black-(low-watt).jpg" alt="dolce gusto mini me black (low watt)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Dolce Gusto Mini Me Black (Low Watt)</p>
-                <p class="price">IDR 850.000</p>
-                <p class="discount">15%</p>
-                <p class="discount-price">IDR 1.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/gaggia-classic-2019-home-espresso.jpg" alt="gaggia classic 2019 home espresso">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Gaggia Classic 2019 Home Espresso</p>
-                <p class="price">IDR 13.311.000</p>
-                <p class="discount">13%</p>
-                <p class="discount-price">IDR 15.300.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/jura-ena-8-massive-grinder-aluminium-automatic.jpg" alt="jura ena 8 massive grinder aluminium - automatic">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Jura Ena 8 Massive Grinder Aluminium - Automatic</p>
-                <p class="price">IDR 38.280.000</p>
-                <p class="discount">13%</p>
-                <p class="discount-price">IDR 44.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/la-pavoni-espresso-coffee-lever-machine.jpg" alt="la pavoni espresso coffee lever machine">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>La Pavoni - Espresso Coffee Lever Machine</p>
-                <p class="price">IDR 12.000.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 13.200.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/rancilio-silvia-(Black)-stainless-steel.jpg" alt="rancilio silvia black stainless steel">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Rancilio - Silvia (Black) Stainless Steel</p>
-                <p class="price">IDR 15.300.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 17.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/saeco-aulika-focus-automatic-stainless-steel.jpg" alt="saeco aulika focus automatic - stainless steel">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Saeco Aulika Focus Automatic - Stainless Steel</p>
-                <p class="price">IDR 28.000.000</p>
-                <p class="discount">20%</p>
-                <p class="discount-price">IDR 35.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/welhome-espresso-machine-kd-130-black.jpg" alt="welhome espresso machine kd-130 black">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Welhome - Espresso Machine KD-130 Black</p>
-                <p class="price">IDR 5.850.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 6.500.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/coffee-machines/welhome-espresso-machine-pro-variable-(KD-310VP).jpg" alt="welhome espresso machine pro variable pressure (kd-310vp)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Welhome - Espresso Machine Pro Variable (KD-310VP)</p>
-                <p class="price">IDR 19.950.000</p>
-                <p class="discount">5%</p>
-                <p class="discount-price">IDR 21.000.000</p>
-                <button>Add to Cart</button>
-            </div>
-        </div>
-
-
-        <div class="product">
-            <div class="product-card">
-                <img src="./images/manual-brewers/a-IDIO-diamond-coffee-dripper-(Black).jpg" alt="a-idio diamond coffee dripper (black)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>A-IDIO - Diamond Coffee Dripper (Black)</p>
-                <p class="price">IDR 672.000</p>
-                <p class="discount">4%</p>
-                <p class="discount-price">IDR 700.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/a-IDIO-drip-coffee-kettle-240ml-(Rose Gold).jpg" alt="a-idio drip coffee kettle 240ml (rose gold)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>A-IDIO - Drip Coffee Kettle 240ml (Rose Gold)</p>
-                <p class="price">IDR 618.800</p>
-                <p class="discount">9%</p>
-                <p class="discount-price">IDR 680.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/a-IDIO -stylish-kettle-600ml-(Titanium Black).jpg" alt="a-idio stylish kettle 600ml (titanium black)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>A-IDIO - Stylish Kettle 600ml (Titanium Black)</p>
-                <p class="price">IDR 988.000</p>
-                <p class="discount">20%</p>
-                <p class="discount-price">IDR 1.235.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/able-kone-coffee-filter-silver-for-chemex.jpg" alt="able kone coffee filter silver for chemex">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Able Kone Coffee Filter - Silver For Chemex</p>
-                <p class="price">IDR 1.200.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 1.320.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/acaia-orion-bean-doser-(Aluminium Material).jpg" alt="acaia orion bean doser (aluminium material)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Acaia - Orion Bean Doser (Aluminium Material)</p>
-                <p class="price">IDR 18.000.000</p>
-                <p class="discount">5%</p>
-                <p class="discount-price">IDR 18.900.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/aerolatte-french-press-3-cups-(Glass Material).jpg" alt="aerolatte french press 3 cups (glass material)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Aerolatte French Press 3 Cups (Glass Material)</p>
-                <p class="price">IDR 285.000</p>
-                <p class="discount">5%</p>
-                <p class="discount-price">IDR 300.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/aeropress-go-travel-coffee-press.jpg" alt="aeropress go travel coffee press">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Aeropress - Go Travel Coffee Press</p>
-                <p class="price">IDR 659.750</p>
-                <p class="discount">9%</p>
-                <p class="discount-price">IDR 725.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/bairro-alto-air-mini-(Stainless Steel).jpg" alt="bairro alto air mini (stainless steel)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Bairro Alto Air Mini (Stainless Steel)</p>
-                <p class="price">IDR 441.000</p>
-                <p class="discount">2%</p>
-                <p class="discount-price">IDR 450.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/balancing-syphon-gold-(Glass Material).jpg" alt="balancing syphon gold (glass material)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Balancing Syphon Gold (Glass Material)</p>
-                <p class="price">IDR 2.350.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 2.585.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/barista&Co-corral-coffee-press-8-cups-(Copper).jpg" alt="barista&co - coral coffee press 8 cups (copper)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Barista & Co - Corral Coffee Press 8 Cups (Copper)</p>
-                <p class="price">IDR 980.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 1.078.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/barista&Co-oneBrew-coffee-and-tea-infuser-(Black).jpg" alt="barista&co - onebrew coffee and tea infuser (black)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Barista & Co - OneBrew Coffee and Tea Infuser (Black)</p>
-                <p class="price">IDR 478.400</p>
-                <p class="discount">8%</p>
-                <p class="discount-price">IDR 520.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/beanplus-my-drip-set-CF02-(Glass Material).jpg" alt="beanplus my drip set cf02 (glass material)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Beanplus - My Drip Set CF02 (Glass Material)</p>
-                <p class="price">IDR 760.000</p>
-                <p class="discount">5%</p>
-                <p class="discount-price">IDR 800.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/bialetti-coffee-press-smart-1L-(Black).jpg" alt="bialetti coffee press smart 1l (black)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Bialetti - Coffee Press Smart 1L (Black)</p>
-                <p class="price">IDR 404.550</p>
-                <p class="discount">7%</p>
-                <p class="discount-price">IDR 435.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/bialetti-moka-express-silver-6-cups.jpg" alt="bialetti moka express silver 6 cups">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Bialetti - Moka Express Silver 6 Cups</p>
-                <p class="price">IDR 760.000</p>
-                <p class="discount">5%</p>
-                <p class="discount-price">IDR 800.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/bialetti-moka-express-silver-6-cups.jpg" alt="bialetti french press omino 1l (stainless steel)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Bialetti French Press Omino 1L (Stainless Steel)</p>
-                <p class="price">IDR 528.000</p>
-                <p class="discount">4%</p>
-                <p class="discount-price">IDR 550.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/bodum-caffetiera-coffee-maker-1L-black.jpg" alt="bodum caffetiera coffeemaker 1l black">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Bodum - Caffetiera Coffee Maker 1L Black</p>
-                <p class="price">IDR 805.100</p>
-                <p class="discount">3%</p>
-                <p class="discount-price">IDR 830.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/delter-coffee-press-brewing.jpg" alt="delter-coffee-press-manual-brewing">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Delter - Coffee Press Manual Brewing</p>
-                <p class="price">IDR 722.500</p>
-                <p class="discount">15%</p>
-                <p class="discount-price">IDR 850.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/hario-teco-dripper-set-TCD-100B.jpg" alt="hario teco dripper set tcd-100b">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Hario - Teco Dripper Set TCD-100B</p>
-                <p class="price">IDR 320.000</p>
-                <p class="discount">10%</p>
-                <p class="discount-price">IDR 352.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/kinto-brewer-black-2-cups-(27521).jpg" alt="kinto brewer black 2 cups (27521)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Kinto - Brewer Black 2 Cups (27521)</p>
-                <p class="price">IDR 383.460</p>
-                <p class="discount">17%</p>
-                <p class="discount-price">IDR 462.000</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./images/manual-brewers/kinto-column-coffee-dripper-brown (22850).jpg" alt="kinto column coffee driper brown (22850)">
-                <i class="fa fa-heart-o machine-wishlist"></i>
-                <p>Kinto Column Coffee Dripper Brown (22850)</p>
-                <p class="price">IDR 317.550</p>
-                <p class="discount">13%</p>
-                <p class="discount-price">IDR 365.000</p>
-                <button>Add to Cart</button>
-            </div>
-        </div>
-
-
-
+        </section>
     </main>
 
     <script src="script.js"></script>
