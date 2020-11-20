@@ -282,9 +282,10 @@ hr {
 }
 
 .discount-price {
-    color: #4F4F4F;
+    color: rgb(189, 189, 189);
     font-size: 15px !important;
     display: inline;
+    text-decoration: line-through;
 }
 
 .product-card button {
