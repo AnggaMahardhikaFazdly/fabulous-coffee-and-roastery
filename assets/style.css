@@ -28,7 +28,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    width: 40%;
+    width: 65%;
     justify-content: space-between;
 }
 
@@ -47,6 +47,22 @@ nav ul li a {
     color: #F2F3F0;
     text-decoration: none;
     font-size: 16px !important;
+}
+
+.shopping-bag {
+    color: #F2F3F0;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.sign-up {
+    color: #2E303D;
+    background-color: #F2F3F0;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    width: 75px;
+    height: 35px;
 }
 
 .menu-toggle {
@@ -85,26 +101,25 @@ nav ul li a {
     transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked ~ span:nth-child(2) {
+.menu-toggle input:checked~span:nth-child(2) {
     transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.menu-toggle input:checked ~ span:nth-child(3) {
+.menu-toggle input:checked~span:nth-child(3) {
     transform: scale(0);
     opacity: 0;
 }
 
-.menu-toggle input:checked ~ span:nth-child(4) {
+.menu-toggle input:checked~span:nth-child(4) {
     transform: rotate(-45deg) translate(-1px, 0);
 }
 
 .slideshow {
-  max-width: 80%;
-  height: 480px;
-  position: relative;
-  margin: auto;
-  margin-top: 10px;
-  font-family: 'Titillium Web', sans-serif;
+    max-width: 100%;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .slideshow img {
@@ -115,56 +130,66 @@ nav ul li a {
 
 /* Caption text */
 .text {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  position: absolute;
-  bottom: 200px;
-  top: 200px;
-  width: 100%;
-  text-align: center;
-  font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    position: absolute;
+    bottom: 200px;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
 }
 
 /* Number text (1/6 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 hr {
@@ -172,7 +197,7 @@ hr {
     display: block;
     margin: auto;
     border-style: groove;
-} 
+}
 
 .about-us {
     text-align: center;
@@ -190,8 +215,8 @@ hr {
     margin-left: 55px;
     margin-right: 110px;
 }
-  
-.info-about-us > div {
+
+.info-about-us>div {
     width: 100%;
     margin: 10px;
     font-size: 20px;
@@ -241,7 +266,7 @@ hr {
 }
 
 .product-catalog button:focus {
-    outline:0;
+    outline: 0;
 }
 
 .product {
@@ -278,9 +303,9 @@ hr {
     font-size: 15px;
     font-weight: bold;
 }
-  
+
 .price {
-    color: rgb(19,183,157);
+    color: rgb(19, 183, 157);
     font-size: 18px !important;
     margin-top: 15px;
 }
@@ -294,7 +319,7 @@ hr {
 
 .discount-price {
     color: rgb(189, 189, 189);
-    font-size: 15px !important;
+    font-size: 13px !important;
     display: inline;
     text-decoration: line-through;
 }
@@ -303,8 +328,9 @@ hr {
     border: none;
     outline: 0;
     padding: 12px;
-    color: white;
-    background-color: rgb(104,185,98);
+    color: #F2F3F0;
+    background-color: rgb(104, 185, 98);
+    /* background-color: #2E303D; */
     text-align: center;
     cursor: pointer;
     font-size: 15px;
@@ -314,7 +340,7 @@ hr {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-  
+
 .product-card button:hover {
     opacity: 0.7;
 }
@@ -364,6 +390,115 @@ hr {
     color: red;
 }
 
+.openChatBtn {
+    background-color: #2E303D;
+    color: #F2F3F0;
+    padding: 10px;
+    border: none;
+    border-radius: 8px 8px 0px 0px;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 1;
+    position: fixed;
+    bottom: 5px;
+    right: 40px;
+    width: 240px;
+    box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.openChat {
+    font-size: 16px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 35px;
+    z-index: 9;
+    box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.head-popupChat {
+    background-color: #2E303D;
+    color: #F2F3F0;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 5px;
+    height: 25px;
+}
+
+.info-msg {
+    color: red;
+}
+
+form {
+    width: 240px;
+    background-color: #F2F3F0;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+form textarea {
+    font-size: 14px;
+    margin: 5px 0 22px 0;
+    color: #2E303D;
+    padding: 10px;
+    resize: none;
+    min-height: 70px;
+    width: 90%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+form textarea:focus {
+    /* background-color: rgb(219, 255, 252); */
+    outline: none;
+}
+
+form input {
+    width: 90%;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+form .btn {
+    background-color: rgb(104, 185, 98);
+    /* background-color: #2E303D; */
+    color: #F2F3F0;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+form .close {
+    background-color: red;
+}
+
+form .btn:hover,
+.openChatBtn:hover {
+    opacity: 1;
+}
+
+
+footer {
+    color: #F2F3F0;
+    background-color: #2E303D;
+    text-align: center;
+    height: 30px;
+    padding: 20px 0;
+}
+
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
@@ -384,7 +519,7 @@ hr {
 
 
 /* Mobile */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .menu-toggle {
         display: flex;
     }
