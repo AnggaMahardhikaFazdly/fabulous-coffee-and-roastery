@@ -363,7 +363,7 @@ nav ul li a {
     opacity: 5;
 }
 
-.manualbrewers-wishlist {
+.manual-brewers-wishlist {
     color: #FFFFFF;
     position: absolute;
     top: 10px;
@@ -372,7 +372,7 @@ nav ul li a {
     cursor: pointer;
 }
 
-.manualbrewers-wishlist:hover {
+.manual-brewers-wishlist:hover {
     opacity: 5;
 }
 
@@ -385,106 +385,96 @@ nav ul li a {
 
 .review {
     color: #F2F3F0;
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
-    bottom: 200px;
-    top: 312.25px;
+    top: 50px;
     width: 100%;
     text-align: center;
     font-style: italic;
 }
 
-.carrousel {
+.carousel-reviewer {
     max-width: 100%;
     text-align: center;
-    height: 500px;
-    margin: auto;
     position: relative;
 }
 
 .background-reviewer {
     width: 100%;
-    filter: brightness(30%);
+    height: 600px;
+    filter: brightness(10%);
 }
 
-.carrousel h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 13px;
+.carousel-reviewer h2 {
+    font-size: 35px;
     text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
-.carrousel .slides {
+.carousel-reviewer .slides {
     width: 400%;
-    left: 0;
-    padding-left: 0;
-    padding-top: 1em;
-    overflow: hidden;
+    margin-top: 50px;
     list-style: none;
-    position: relative;
     -webkit-transition: transform .5s;
     -moz-transition: transform .5s;
     -o-transition: transform .5s;
     transition: transform .5s;
 }
 
-.carrousel .slides li {
+.carousel-reviewer .slides li {
     width: 25%;
     position: relative;
     float: left;
 }
 
-.carrousel li p {
-    margin-top: 0;
+.carousel-reviewer li p {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: rgb(226, 41, 41);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.carrousel li q {
-    max-width: 90%;
-    margin: auto;
-    color: #666666;
-    font-size: 1.3em;
-    font-weight: bold;
+.carousel-reviewer li q {
+    color: #F2F3F0;
+    font-size: 1em;
+    font-weight: 500;
 }
 
-.carrousel li img {
-    width: 3em;
-    height: 3em;
+.carousel-reviewer li img {
+    width: 3.7em;
+    height: 3.7em;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: -1.5em;
-    margin-right: 0.5em;
+    margin: auto;
     vertical-align: middle;
+    margin-top: 20px !important;
 }
 
-.carrousel li span.author {
-    margin-top: 0.5em;
-    font-size: 1.2em;
-    color: #777777;
-    display: block;
-}
-
-.carrousel .slidesNavigation {
+.carousel-reviewer .slidesNavigation {
     display: block;
     list-style: none;
     text-align: center;
-    bottom: 1em;
+    bottom: -2em;
     /*--- Centering trick---*/
     /* Absolute positioning*/
     position: absolute;
-    /* Abosulte positioning*/
+    /* Absolute positioning*/
     width: 104px;
-    /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    /*This width  is the addition of the width of all the navigation dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px margin-left + 6 px margin-right) and there are 4 dots so 4x26=104 */
     left: 50%;
     /*Centering de element*/
     margin-left: -52px;
     /*adjusting the centering by applying a negative margin of half of the width*/
 }
 
-.carrousel input {
+.carousel-reviewer input {
     display: none;
 }
 
-.carrousel .slidesNavigation label {
+.carousel-reviewer .slidesNavigation label {
     float: left;
     margin: 6px;
     display: block;
@@ -516,15 +506,15 @@ nav ul li a {
     transform: translateX(-75%);
 }
 
-.carrousel .slidesNavigation label:hover {
+.carousel-reviewer .slidesNavigation label:hover {
     cursor: pointer;
 }
 
 /* You have to repeat this with each slide/dot */
-.carrousel #radio-1:checked~.slidesNavigation label#dotForRadio-1,
-.carrousel #radio-2:checked~.slidesNavigation label#dotForRadio-2,
-.carrousel #radio-3:checked~.slidesNavigation label#dotForRadio-3,
-.carrousel #radio-4:checked~.slidesNavigation label#dotForRadio-4 {
+.carousel-reviewer #radio-1:checked~.slidesNavigation label#dotForRadio-1,
+.carousel-reviewer #radio-2:checked~.slidesNavigation label#dotForRadio-2,
+.carousel-reviewer #radio-3:checked~.slidesNavigation label#dotForRadio-3,
+.carousel-reviewer #radio-4:checked~.slidesNavigation label#dotForRadio-4 {
     background: #2980b9;
 }
 
@@ -609,7 +599,6 @@ form input {
 
 form .btn {
     background-color: rgb(104, 185, 98);
-    /* background-color: #2E303D; */
     color: #F2F3F0;
     padding: 10px;
     font-weight: bold;
