@@ -114,6 +114,10 @@ nav ul li a {
     transform: rotate(-45deg) translate(-1px, 0);
 }
 
+.logo {
+    top: 25px;
+}
+
 .slideshow {
     max-width: 100%;
     height: 700px;
@@ -123,7 +127,7 @@ nav ul li a {
 }
 
 .slideshow img {
-    filter: brightness(50%);
+    filter: brightness(30%);
     width: 100%;
     height: 624.5px;
 }
@@ -142,9 +146,9 @@ nav ul li a {
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
