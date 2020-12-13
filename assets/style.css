@@ -32,6 +32,10 @@ nav ul {
     justify-content: space-between;
 }
 
+nav li {
+    margin-top: 10px;
+}
+
 .nav-link:hover::after {
     content: '';
     display: block;
