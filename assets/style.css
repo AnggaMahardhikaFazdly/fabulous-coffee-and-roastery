@@ -1,3 +1,10 @@
+:root {
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #2E303D;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,10 +39,6 @@ nav ul {
     justify-content: space-between;
 }
 
-nav li {
-    margin-top: 10px;
-}
-
 .nav-link:hover::after {
     content: '';
     display: block;
@@ -59,9 +62,10 @@ nav ul li a {
     cursor: pointer;
 }
 
-.sign-up {
+.login {
     color: #2E303D;
     background-color: #F2F3F0;
+    font-weight: bold;
     cursor: pointer;
     border: none;
     border-radius: 6px;
@@ -494,10 +498,6 @@ nav ul li a {
     font-size: 0;
 }
 
-/* You have to repeat this with each slide
-  TODO: make it easier with SCSS
-  25% movement 100/slides-num
-  */
 #radio-1:checked~.slides {
     transform: translateX(0%);
 }
@@ -518,7 +518,6 @@ nav ul li a {
     cursor: pointer;
 }
 
-/* You have to repeat this with each slide/dot */
 .carousel-reviewer #radio-1:checked~.slidesNavigation label#dotForRadio-1,
 .carousel-reviewer #radio-2:checked~.slidesNavigation label#dotForRadio-2,
 .carousel-reviewer #radio-3:checked~.slidesNavigation label#dotForRadio-3,
@@ -527,6 +526,240 @@ nav ul li a {
 }
 
 
+
+/* blog */
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+.title {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.blog {
+    padding: 4.5rem 0;
+}
+
+.blog-content {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.blog-img {
+    position: relative;
+}
+
+.blog-img img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.blog-img span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--dark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.blog-text {
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.blog-text span {
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.blog-text h2 {
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+
+.blog-text p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+
+.blog-text a {
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+
+.blog-text a:hover {
+    background: var(--dark);
+}
+
+.contact-wrap {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-in {
+    padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+    flex: 40%;
+    padding: 0;
+}
+
+.contact-in:nth-child(2) {
+    flex: 20%;
+    background: url(../images/contact/coffee.jpg);
+    color: #fff;
+}
+
+.contact-in:nth-child(3) {
+    flex: 30%;
+    background-color: #2E303D;
+}
+
+.contact-in h1 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-in h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: #f5f5f5;
+    color: #000;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.contact-in p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact-in ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-in ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.contact-in ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.contact-in ul li a i {
+    font-size: 14px;
+    line-height: 30px;
+    color: #000;
+}
+
+.contact-in form {
+    width: 100%;
+    height: auto;
+}
+
+.contact-in-input {
+    width: 400px;
+    height: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-input::placeholder {
+    color: #fff;
+}
+
+.contact-in-textarea {
+    width: 400px;
+    height: 90px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-textarea::placeholder {
+    color: #fff;
+}
+
+.contact-in-btn {
+    width: 418px;
+    height: 40px;
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.contact-in iframe {
+    width: 100%;
+    height: 100%;
+}
 
 .openChatBtn {
     background-color: #2E303D;
@@ -567,7 +800,7 @@ nav ul li a {
     color: red;
 }
 
-form {
+.form-chat {
     width: 240px;
     background-color: #F2F3F0;
     padding: 10px;
