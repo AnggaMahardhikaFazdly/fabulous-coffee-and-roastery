@@ -5,6 +5,26 @@
     --dark: #2E303D;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -140,7 +160,6 @@ nav ul li a {
     height: 624.5px;
 }
 
-/* Caption text */
 .text {
     color: #F2F3F0;
     font-size: 40px;
@@ -335,7 +354,6 @@ nav ul li a {
     padding: 12px;
     color: #F2F3F0;
     background-color: rgb(104, 185, 98);
-    /* background-color: #2E303D; */
     text-align: center;
     cursor: pointer;
     font-size: 15px;
@@ -470,16 +488,10 @@ nav ul li a {
     list-style: none;
     text-align: center;
     bottom: -2em;
-    /*--- Centering trick---*/
-    /* Absolute positioning*/
     position: absolute;
-    /* Absolute positioning*/
     width: 104px;
-    /*This width  is the addition of the width of all the navigation dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px margin-left + 6 px margin-right) and there are 4 dots so 4x26=104 */
     left: 50%;
-    /*Centering de element*/
     margin-left: -52px;
-    /*adjusting the centering by applying a negative margin of half of the width*/
 }
 
 .carousel-reviewer input {
@@ -525,10 +537,6 @@ nav ul li a {
     background: #2980b9;
 }
 
-
-
-/* blog */
-
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -538,6 +546,7 @@ nav ul li a {
 .title {
     text-align: center;
     padding: 1rem 0;
+    font-size: 25px;
 }
 
 .blog {
@@ -666,6 +675,14 @@ nav ul li a {
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
+}
+
+.contact-in h3 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .contact-in p {
@@ -824,7 +841,6 @@ form textarea {
 }
 
 form textarea:focus {
-    /* background-color: rgb(219, 255, 252); */
     outline: none;
 }
 
@@ -874,8 +890,104 @@ footer {
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
+    .menu-toggle {
+        display: flex;
+    }
+
     nav ul {
-        width: 70%;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        background-color: #2E303D;
+        transform: translateX(100%);
+        transition: all 1.5s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .shopping-bag {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .slideshow {
+        height: 550px;
+    }
+
+    .slideshow img {
+        height: 500px;
+    }
+
+    .text {
+        font-size: 20px;
+        color: #F2F3F0;
+        top: 250px;
+
+    }
+
+    .about-us h2 {
+        font-size: 25px;
+    }
+
+    .about-us p {
+        font-size: 17px;
+    }
+
+    .info-about-us {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .info-about-us>div {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .info-about-us img {
+        width: 80px;
+        display: block;
+        margin: auto;
+    }
+
+    .info-about-us p {
+        margin-bottom: 20px;
+    }
+
+    .info-head-about-us {
+        margin-bottom: 10px;
+    }
+
+    .product-catalog h2 {
+        font-size: 25px;
+    }
+
+    .product-catalog button {
+        font-size: 17px;
+    }
+
+    .product {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+
+    .product-card {
+        max-width: 200px;
     }
 
     .flex-info {
@@ -887,6 +999,97 @@ footer {
         display: block;
         margin: auto;
     }
+
+    .review {
+        font-size: 20px;
+    }
+
+    .background-reviewer {
+        height: 450px;
+    }
+
+    .blog-content {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+
+    .blog-img img {
+        height: 150px;
+    }
+
+    .blog-text span {
+        font-size: 0.8rem;
+    }
+
+    .blog-text h2 {
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .blog-text p {
+        font-size: 1rem;
+    }
+
+    .blog-text a {
+        font-size: 0.8rem;
+    }
+
+    .contact-wrap {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-in {
+        padding: 40px 30px;
+    }
+
+    .contact-in:nth-child(1) {
+        flex: 15%;
+        padding: 0;
+    }
+
+    .contact-in:nth-child(2) {
+        flex: 10%;
+        background: url(../images/contact/coffee.jpg);
+        color: #fff;
+    }
+
+    .contact-in:nth-child(3) {
+        flex: 10%;
+        background-color: #2E303D;
+    }
+
+    .contact-in h1 {
+        font-size: 15px;
+    }
+
+    .contact-in h2 {
+        font-size: 13px;
+    }
+
+    .contact-in h2 i {
+        font-size: 13px;
+    }
+
+    .contact-in h3 {
+        font-size: 15px;
+    }
+
+    .contact-in-input {
+        width: 170px;
+    }
+
+    .contact-in-textarea {
+        width: 170px;
+    }
+
+    .contact-in-btn {
+        width: 188px;
+    }
+
 }
 
 
@@ -899,14 +1102,14 @@ footer {
     nav ul {
         position: absolute;
         right: 0;
-        top: 75px;
-        width: 70%;
-        height: 100vh;
+        top: 60px;
+        width: 100%;
+        height: 400px;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         z-index: -1;
-        background-color: #F7F4F2;
+        background-color: #2E303D;
         transform: translateX(100%);
         transition: all 1.5s;
         opacity: 0;
@@ -914,7 +1117,81 @@ footer {
 
     nav ul.slide {
         transform: translateX(0);
-        opacity: 1;
+    }
+
+    .shopping-bag {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .slideshow {
+        height: 450px;
+    }
+
+    .slideshow img {
+        height: 400px;
+    }
+
+    .text {
+        font-size: 20px;
+        color: #F2F3F0;
+        top: 200px;
+
+    }
+
+    .about-us h2 {
+        font-size: 25px;
+    }
+
+    .about-us p {
+        font-size: 17px;
+    }
+
+    .info-about-us {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .info-about-us>div {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .info-about-us img {
+        width: 80px;
+        display: block;
+        margin: auto;
+    }
+
+    .info-about-us p {
+        margin-bottom: 20px;
+    }
+
+    .info-head-about-us {
+        margin-bottom: 10px;
+    }
+
+    .product-catalog h2 {
+        font-size: 25px;
+    }
+
+    .product-catalog button {
+        font-size: 17px;
+    }
+
+    .product {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+
+    .product-card {
+        max-width: 200px;
     }
 
     .flex-info {
@@ -925,5 +1202,131 @@ footer {
 
     .flex-info img {
         display: block;
+    }
+
+    .review {
+        font-size: 15px;
+    }
+
+    .background-reviewer {
+        height: 400px;
+    }
+
+
+    .blog {
+        padding: 4.5rem 0;
+    }
+
+    .blog-content {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+
+    .blog-img img {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        display: block;
+    }
+
+    .blog-text {
+        margin: 2.2rem 0;
+        padding: 0 1rem;
+    }
+
+    .blog-text span {
+        font-weight: 300;
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+
+    .blog-text h2 {
+        font-family: var(--Playfair);
+        padding: 1rem 0;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .blog-text p {
+        font-weight: 300;
+        font-size: 0.8rem;
+        opacity: 0.9;
+    }
+
+    .blog-text a {
+        font-size: 0.6rem;
+    }
+
+    .blog-text a:hover {
+        background: var(--dark);
+    }
+
+    .contact-wrap {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-in {
+        padding: 40px 30px;
+    }
+
+    .contact-in:nth-child(1) {
+        flex: 15%;
+        padding: 0;
+    }
+
+    .contact-in:nth-child(2) {
+        flex: 10%;
+        background: url(../images/contact/coffee.jpg);
+        color: #fff;
+    }
+
+    .contact-in:nth-child(3) {
+        flex: 30%;
+        background-color: #2E303D;
+    }
+
+    .contact-in h1 {
+        font-size: 15px;
+    }
+
+    .contact-in h2 {
+        font-size: 13px;
+    }
+
+    .contact-in h2 i {
+        font-size: 13px;
+    }
+
+    .contact-in h3 {
+        font-size: 15px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-in form {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contact-in-input {
+        width: 80%;
+    }
+
+    .contact-in-textarea {
+        width: 80%;
+    }
+
+    .contact-in-btn {
+        width: 84%;
     }
 }
